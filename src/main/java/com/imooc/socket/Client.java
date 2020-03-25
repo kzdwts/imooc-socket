@@ -20,7 +20,7 @@ public class Client {
             // 2、获取输出流，向服务端发送信息
             OutputStream os = socket.getOutputStream(); // 字节输出流
             PrintWriter pw = new PrintWriter(os);
-            pw.write("用户名：admin;密码：123");
+            pw.write("用户名：admin;密码：123456");
             pw.flush();
             socket.shutdownOutput();// 关闭输出流
 
